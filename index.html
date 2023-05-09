@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <meta http-equiv="refresh" content="0; URL=https://brightspace.tudelft.nl/d2l/home/6647">
 </head>
 <body>
-    
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const q = urlParams.get('q');
+        if (q === 'pts') {
+            window.location.href = 'https://brightspace.tudelft.nl/d2l/home/499397';
+        } else if(q === 'cn') {
+            window.location.href = 'https://brightspace.tudelft.nl/d2l/home/499405';
+        } 
+        else if(q === 'sqt') {
+            window.location.href = 'https://brightspace.tudelft.nl/d2l/home/499391';
+        }
+        else {
+            window.location.href = 'https://brightspace.tudelft.nl/d2l/home/6647';
+        }
+    </script>
 </body>
 </html>
